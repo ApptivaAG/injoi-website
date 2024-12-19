@@ -3,7 +3,6 @@ import { callToActionLinks, footer } from 'src/config'
 import { getCurrentLanguage, mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro'
 import Container from './Container.astro'
-import Instagram from '@icons/Instagram.astro'
 import Sitemap from './Sitemap.astro'
 import Dialog from '@components/Dialog'
 import Newsletter from '@components/Newsletter'
@@ -26,10 +25,6 @@ const links = callToActionLinks[lang]
 
   <div class="columns footer-container">
     <div>
-      <p class="social">
-        <a href="https://www.instagram.com/injoi/"><Instagram /></a>&nbsp;
-      </p>
-
       <p>
         © 2019 - {new Date().getFullYear()} injoi
         <br />
@@ -63,11 +58,7 @@ const links = callToActionLinks[lang]
       </Dialog>
       <p>
         {footerInfo.inquiries}&ensp;
-        <a href="tel:+41625614243">+41 62 561 42 43</a>
-        {footerInfo.or}
-        <a href={footerInfo.appointment.url}>{footerInfo.appointment.title}</a>
-        <br />
-        <br />
+        <a href="tel:+41413222626">+41 41 322 26 26</a>
       </p>
     </div>
     <p>
