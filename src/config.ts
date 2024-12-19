@@ -133,10 +133,10 @@ const navigationDe: NavigationTree = [
     href: '/de/demo/',
     title: 'Demo',
   },
-  {
-    href: '/de/termin/',
-    title: 'Termin',
-  },
+  // {
+  //   href: '/de/termin/',
+  //   title: 'Termin',
+  // },
   {
     href: '/de/kontakt/',
     title: 'Kontakt',
@@ -203,10 +203,10 @@ const navigationFr: NavigationTree = [
     href: '/fr/démo/',
     title: 'Démo',
   },
-  {
-    href: '/fr/rencontre/',
-    title: 'Prendre rendez-vous',
-  },
+  // {
+  //   href: '/fr/rencontre/',
+  //   title: 'Prendre rendez-vous',
+  // },
   {
     href: '/fr/contacter/',
     title: 'Contacter',
@@ -273,10 +273,10 @@ const navigationEn: NavigationTree = [
     href: '/en/demo/',
     title: 'Try Demo',
   },
-  {
-    href: '/en/appointment/',
-    title: 'Make an appointment',
-  },
+  // {
+  //   href: '/en/appointment/',
+  //   title: 'Make an appointment',
+  // },
   {
     href: '/en/contact/',
     title: 'Contact',
