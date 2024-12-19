@@ -201,7 +201,7 @@ const navigationFr: NavigationTree = [
   //},
   {
     href: '/fr/démo/',
-    title: 'Essayez la démo',
+    title: 'Démo',
   },
   {
     href: '/fr/rencontre/',
