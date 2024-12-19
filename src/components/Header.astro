@@ -27,26 +27,28 @@ const data = metaData[lang]
 </script>
 
 <header id="root-header">
-  <nav>
-    <a
-      class="logo"
-      href={langPage}
-      aria-current={isCurrentPage(langPage, { exact: true })}
-    >
-      <img src={data.image} />
-    </a>
-    {
-      navigation.map((item) =>
-        'items' in item ? (
-          <FlyoutMenu {...item} />
-        ) : (
-          <a href={item.href} aria-current={isCurrentPage(item.href)}>
-            {item.title}
-          </a>
+  <div class="container">
+    <nav>
+      <a
+        class="logo"
+        href={langPage}
+        aria-current={isCurrentPage(langPage, { exact: true })}
+      >
+        <img src={data.image} />
+      </a>
+      {
+        navigation.map((item) =>
+          'items' in item ? (
+            <FlyoutMenu {...item} />
+          ) : (
+            <a href={item.href} aria-current={isCurrentPage(item.href)}>
+              {item.title}
+            </a>
+          )
         )
-      )
-    }
-  </nav>
+      }
+    </nav>
+  </div>
   <Dialog client:load>
     <button slot="openElement">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -87,11 +89,22 @@ const data = metaData[lang]
 
     nav {
       display: flex;
-      width: calc(100% + 2.4rem);
-      margin-inline: -1.2rem;
+      align-items: center;
+      width: 100%;
 
       [aria-current] {
         color: var(--primary-color);
+      }
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 60rem;
+
+      @media (min-width: 1024px) {
+        padding-inline: 2em;
       }
     }
 
@@ -105,6 +118,7 @@ const data = metaData[lang]
 
       &.logo {
         flex: none;
+        padding-inline: 0;
         margin-right: auto;
         flex-direction: column;
         align-items: center;

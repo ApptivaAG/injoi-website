@@ -13,27 +13,27 @@ const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
   claim: 'Ihre Gäste bestellen und bezahlen ohne Wartezeit.',
   name: 'injoi',
-  image: '/assets/logo/injoi_free.svg',
+  image: '/assets/logo/injoi-logo.svg',
 }
 
 const productFr: Product = {
   description: 'Self-Order|Pay pour la Gastronomie',
   claim: 'Vos clients commandent et paient sans attendre.',
   name: 'injoi',
-  image: '/assets/logo/injoi_free.svg',
+  image: '/assets/logo/injoi-logo.svg',
 }
 
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
   name: 'injoi',
-  image: '/assets/logo/injoi_free.svg',
+  image: '/assets/logo/injoi-logo.svg',
 }
 const productIt: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
   name: 'injoi',
-  image: '/assets/logo/injoi_free.svg',
+  image: '/assets/logo/injoi-logo.svg',
 }
 export const metaData: MetaData = {
   de: productDe,
@@ -107,7 +107,7 @@ const navigationDe: NavigationTree = [
   },
   {
     title: 'Über',
-    items: [ 
+    items: [
       {
         title: 'Uns',
         href: '/de/ueber-uns/',
@@ -118,24 +118,24 @@ const navigationDe: NavigationTree = [
         title: 'Team',
         description: 'Wer versteckt sich hinter der Persona?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+      //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/de/demo/', 
-    title: 'Demo ausprobieren',
+    href: '/de/demo/',
+    title: 'Demo',
   },
   {
     href: '/de/termin/',
-    title: 'Termin vereinbaren',
+    title: 'Termin',
   },
   {
     href: '/de/kontakt/',
@@ -188,19 +188,19 @@ const navigationFr: NavigationTree = [
         title: 'Team',
         description: 'Qui se cache derrière le personnage?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+      //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/fr/démo/', 
+    href: '/fr/démo/',
     title: 'Essayez la démo',
   },
   {
@@ -258,19 +258,19 @@ const navigationEn: NavigationTree = [
         title: 'Team',
         description: 'Who is hiding behind the persona?',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //       description: 'Der neuste Gossip, der gerade die Runden macht.',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //       description: 'Der neuste Gossip, der gerade die Runden macht.',
+      //     },
     ],
   },
   //{
-    //title: 'Preise',
-    //href: '/de/preise/',
+  //title: 'Preise',
+  //href: '/de/preise/',
   //},
   {
-    href: '/en/demo/', 
+    href: '/en/demo/',
     title: 'Try Demo',
   },
   {
@@ -307,8 +307,8 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/funktionsumfang/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/de/demo/',
@@ -327,14 +327,14 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //     },
+      //     {
+      //       href: '/de/kontakt/',
+      //       title: 'Kontakt',
+      //     },
     ],
   },
   {
@@ -402,8 +402,8 @@ const siteMapFr: SiteMapGroup[] = [
         href: '/fr/fonctions/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/fr/démo/',
@@ -422,14 +422,14 @@ const siteMapFr: SiteMapGroup[] = [
         href: '/fr/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //     },
+      //     {
+      //       href: '/de/kontakt/',
+      //       title: 'Kontakt',
+      //     },
     ],
   },
   // {
@@ -497,8 +497,8 @@ const siteMapEn: SiteMapGroup[] = [
         href: '/en/functions/',
       },
       //{
-        //title: 'Preise',
-        //href: '/de/preise/',
+      //title: 'Preise',
+      //href: '/de/preise/',
       //},
       {
         href: '/en/demo/',
@@ -517,14 +517,14 @@ const siteMapEn: SiteMapGroup[] = [
         href: '/en/team/',
         title: 'Team',
       },
-  //     {
-  //       href: '/de/blog/',
-  //       title: 'Blog',
-  //     },
-  //     {
-  //       href: '/de/kontakt/',
-  //       title: 'Kontakt',
-  //     },
+      //     {
+      //       href: '/de/blog/',
+      //       title: 'Blog',
+      //     },
+      //     {
+      //       href: '/de/kontakt/',
+      //       title: 'Kontakt',
+      //     },
     ],
   },
   // {
