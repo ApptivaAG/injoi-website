@@ -18,14 +18,14 @@ export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
   {
     // Enable the Solid renderer to support Solid JSX components.
-    site: 'https://payflink.com',
+    site: 'https://injoiapp.com',
     trailingSlash: 'always',
     integrations: [
       solid(),
       sitemap({
         filter: (page) =>
-          page !== 'https://payflink.com/de/avv/' &&
-          page !== 'https://payflink.com/tracking/',
+          page !== 'https://injoiapp.com/de/avv/' &&
+          page !== 'https://injoiapp.com/tracking/',
       }),
       image({
         serviceEntryPoint: '@astrojs/image/sharp',

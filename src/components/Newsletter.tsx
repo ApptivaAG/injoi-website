@@ -97,8 +97,8 @@ const Newsletter = () => {
           <p>
             <br />
             Es würde uns sehr freuen, wenn Sie dieses Problem an{' '}
-            <a href="mailto:support@payflink.com">
-              support@payflink.com
+            <a href="mailto:support@injoiapp.com">
+              support@injoiapp.com
             </a>{' '}
             melden.
           </p>
