@@ -33,7 +33,7 @@ const Plan = ({ children }: { children: JSX.Element }) => {
       <label for="turnover">
         <dl>
           <dt>
-            Monatlicher Payflink-Umsatz / Betrieb {value != moreValue && 'bis zu'}
+            Monatlicher injoi-Umsatz / Betrieb {value != moreValue && 'bis zu'}
           </dt>
           <dd>
             {value == moreValue

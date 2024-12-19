@@ -1,4 +1,4 @@
-# Payflink Website
+# injoi Website
 
 ## Stack
 

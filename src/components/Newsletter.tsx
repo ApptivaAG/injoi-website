@@ -42,7 +42,7 @@ const Newsletter = () => {
         <form onSubmit={onSubmit}>
           <h2>Newsletter</h2>
           <p style="margin-bottom: 2em;">
-            Möchten Sie über die neuesten Updates and Highlights von Payflink
+            Möchten Sie über die neuesten Updates and Highlights von injoi
             informiert werden? Dann abonnieren Sie unseren Newsletter!
           </p>
           <div>

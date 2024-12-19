@@ -16,7 +16,7 @@ Aucun invité n'attend pour commander ou payer.
 
 ## Mission
 
-Payflink permet de commander et de payer via l'application dans la plupart des restaurants.
+injoi permet de commander et de payer via l'application dans la plupart des restaurants.
 
 ## Valeurs
 

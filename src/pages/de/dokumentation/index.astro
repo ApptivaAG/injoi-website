@@ -6,10 +6,10 @@ import type { DocumentationFrontMatter } from 'src/types'
 const docs = await Astro.glob<DocumentationFrontMatter>('./**/*.mdx')
 
 const description =
-  'Dokumentation von Payflink, der Bestell- und Zahlungsspeisekarte.'
+  'Dokumentation von injoi, der Bestell- und Zahlungsspeisekarte.'
 ---
 
-<Main title="Dokumentation für Payflink" description={description}>
+<Main title="Dokumentation für injoi" description={description}>
   <Container size="small">
     <h1>Dokumentation</h1>
     {

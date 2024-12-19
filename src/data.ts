@@ -4,12 +4,12 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Shaban Ademi',
     image: '/assets/team/shaban-ademi.jpg',
-    role: { de: 'Payflink Mitgründer | Marketing & Sales', fr:'CO-Fondateur | Marketing & Ventes', en: 'Payflink CO-Founder | Marketing & Sales', it:'' },
+    role: { de: 'injoi Mitgründer | Marketing & Sales', fr:'CO-Fondateur | Marketing & Ventes', en: 'injoi CO-Founder | Marketing & Sales', it:'' },
   },
   {
     name: 'Hüseyin Ayas',
     image: '/assets/team/husi-ayas.jpg',
-    role: { de: 'Payflink Mitgründer | IT & Software Development', fr:'CO-Fondateur | IT & Software Development', en: 'Payflink CO-Founder | IT & Software Development', it:'' },
+    role: { de: 'injoi Mitgründer | IT & Software Development', fr:'CO-Fondateur | IT & Software Development', en: 'injoi CO-Founder | IT & Software Development', it:'' },
   },
   {
     name: 'Philip Schönholzer',

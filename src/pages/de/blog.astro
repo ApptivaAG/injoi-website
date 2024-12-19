@@ -9,12 +9,12 @@ const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.mdx')
 const sortedBlogs = takeSortedBlogPosts(blogs, 'de')
 
 const description =
-  'Der neuste Klatsch und Tratsch, den Payflink aufgeschnappt hat.'
+  'Der neuste Klatsch und Tratsch, den injoi aufgeschnappt hat.'
 ---
 
-<Main title="Blog: Neuigkeiten zu Payflink" description={description}>
+<Main title="Blog: Neuigkeiten zu injoi" description={description}>
   <Container size="small">
-    <h1>Blog: Neuigkeiten zu Payflink</h1>
+    <h1>Blog: Neuigkeiten zu injoi</h1>
     {
       sortedBlogs.map((post) => (
         <article>

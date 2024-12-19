@@ -16,7 +16,7 @@ No guest waits to order or pay.
 
 ## Mission
 
-Payflink makes it possible to order and pay via app in most restaurants.
+injoi makes it possible to order and pay via app in most restaurants.
 
 ## Values
 

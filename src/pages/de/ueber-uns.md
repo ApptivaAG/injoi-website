@@ -16,7 +16,7 @@ Kein Gast wartet, um zu bestellen oder bezahlen.
 
 ## Mission
 
-Payflink ermöglicht es in den meisten Gastronomiebetrieben per App zu bestellen und zu bezahlen.
+injoi ermöglicht es in den meisten Gastronomiebetrieben per App zu bestellen und zu bezahlen.
 
 ## Werte
 

@@ -58,14 +58,14 @@ const isDe = isCurrentPage('/de/')
 
 const title = `Unverbindliche Anfrage • Plan ${planTitle}`
 const description =
-  'Im Rahmen Ihrer Anfrage, senden wir Ihnen einen Testzugang, um Payflink ausgiebig zu testen.'
+  'Im Rahmen Ihrer Anfrage, senden wir Ihnen einen Testzugang, um injoi ausgiebig zu testen.'
 ---
 
 <Main title={title} description={description}>
   <Container size="small">
     <h1>Unverbindlich Anfrage <small>Plan {planTitle}</small></h1>
     <p>
-      Vielen Dank für Ihr Interesse an Payflink. Bitte ergänzen Sie die folgenden
+      Vielen Dank für Ihr Interesse an injoi. Bitte ergänzen Sie die folgenden
       Angaben, damit wir Ihnen einen Test-Zugang zusenden können.
     </p>
     <div class="card">
@@ -81,7 +81,7 @@ const description =
       {
         turnover && (
           <p>
-            Payflink-Umsatz bis: <b>{currency.format(turnover)}.-</b>
+            injoi-Umsatz bis: <b>{currency.format(turnover)}.-</b>
           </p>
         )
       }
@@ -101,7 +101,7 @@ const description =
           Nicht ausfüllen:{' '}
           <input type="text" name="bot-field" />
         </label>
-        <input type="text" name="subject" value="Neue Payflink-Anmeldung" />
+        <input type="text" name="subject" value="Neue injoi-Anmeldung" />
         <input type="text" name="plan" value={plan} />
         <input type="text" name="locale" value={isDe ? 'de' : 'en'} />
       </p>

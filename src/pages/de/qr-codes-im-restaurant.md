@@ -57,12 +57,12 @@ Dieser QR Code auf dem Schaufenster wird Ihr Restaurant repräsentieren, also de
 - Telefon
 - Digitale Speisekarte
 
-## Payflink: Ihre digitale Speisekarte als QR Code
+## injoi: Ihre digitale Speisekarte als QR Code
 
-Ein Restaurant kann einen QR Code auf verschiedene Weise nutzen, wie wir hier erwähnt haben. Aber unser letzter Tipp liegt uns natürlich besonders am Herzen: Um Ihre digitale Speisekarte auf komfortable und interaktive Weise zu präsentieren, empfehlen wir Payflink!
+Ein Restaurant kann einen QR Code auf verschiedene Weise nutzen, wie wir hier erwähnt haben. Aber unser letzter Tipp liegt uns natürlich besonders am Herzen: Um Ihre digitale Speisekarte auf komfortable und interaktive Weise zu präsentieren, empfehlen wir injoi!
 
-Bei Payflink öffnet das Scannen des QR Codes direkt unsere digitale Speisekarte, die je nach Wahl des Restaurants auch zusätzliche Bestell- und Bezahlfunktionen bieten kann.
+Bei injoi öffnet das Scannen des QR Codes direkt unsere digitale Speisekarte, die je nach Wahl des Restaurants auch zusätzliche Bestell- und Bezahlfunktionen bieten kann.
 
-Wenn Sie also auf der Suche nach guter Restaurantlogistik sind und Ihre Speisekarte durch Logo, Design und Namen repräsentieren möchten, ist Payflink die richtige Wahl.
+Wenn Sie also auf der Suche nach guter Restaurantlogistik sind und Ihre Speisekarte durch Logo, Design und Namen repräsentieren möchten, ist injoi die richtige Wahl.
 
 Wenden Sie sich an [unser Team](/de/kontakt/), das Sie bei den nächsten Schritten unterstützt!

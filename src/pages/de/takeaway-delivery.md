@@ -1,18 +1,18 @@
 ---
 lang: de
-title: Take Away- und Delivery-Bestellungen mit Payflink
-description: Setzen Sie Payflink ein, um die Bestellung und Bezahlung von Take Away und Delivery zu digitalisieren.
+title: Take Away- und Delivery-Bestellungen mit injoi
+description: Setzen Sie injoi ein, um die Bestellung und Bezahlung von Take Away und Delivery zu digitalisieren.
 keyword: take away und delivery
 layout: '@layouts/LandingPage.astro'
 ---
 
-Payflink ist einfach und praktisch, denn unsere Web-App bietet Ihren Gästen die Möglichkeit, Bestellung und Bezahlung von Take Away und Delivery im Webbrowser durchzuführen.
+injoi ist einfach und praktisch, denn unsere Web-App bietet Ihren Gästen die Möglichkeit, Bestellung und Bezahlung von Take Away und Delivery im Webbrowser durchzuführen.
 
-## Payflink als Take Away und Delivery
+## injoi als Take Away und Delivery
 
-Payflink ist nicht nur vielseitig, sondern auch praktisch. Während der Covid-19-Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung bietet Payflink die Möglichkeiten, Take Away und Delivery direkt auf Ihrer Webseite anzubieten.
+injoi ist nicht nur vielseitig, sondern auch praktisch. Während der Covid-19-Pandemie wurde deutlich, dass man vorausschauend denken muss, um unvorhergesehene Ereignisse zu bewältigen. Mit dem Fokus auf eine schnelle und kostengünstige Lösung bietet injoi die Möglichkeiten, Take Away und Delivery direkt auf Ihrer Webseite anzubieten.
 
-Folgende Möglichkeiten haben Sie mit Payflink:
+Folgende Möglichkeiten haben Sie mit injoi:
 
 ### Take Away
 
@@ -28,8 +28,8 @@ Eine Variation von Meal Delivery sind Meal Kits. Hierbei werden die Gäste Zutat
 
 Der schrittweise Prozess ist einfach:
 
-1. Entscheiden Sie, in welchem Umfang Sie Payflink einsetzen wollen
-2. Engagieren Sie Payflink
+1. Entscheiden Sie, in welchem Umfang Sie injoi einsetzen wollen
+2. Engagieren Sie injoi
 3. Erfassen Sie Ihre Speisekarte online
 4. Binden Sie die Speisekarte auf Ihrer Homepage ein
 

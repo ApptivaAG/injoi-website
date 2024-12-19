@@ -84,16 +84,16 @@ Der Gast, der nach einer online Speisekarte sucht, empfindet eine gewisse Unmitt
 
 Also: die Möglichkeit, online über die online Speisekarte zu bezahlen, bringt Ihrem Betrieb neue Möglichkeiten und sicher mehr Umsatz.
 
-## Kennen Sie die online Speisekarte Payflink?
+## Kennen Sie die online Speisekarte injoi?
 
-Eine online Speisekarte bietet so viele Möglichkeiten, und Sie wissen jetzt, was Sie von ihr erwarten können, oder? Dann lernen Sie Payflink kennen.
+Eine online Speisekarte bietet so viele Möglichkeiten, und Sie wissen jetzt, was Sie von ihr erwarten können, oder? Dann lernen Sie injoi kennen.
 
-So einfach wie der Name, aber voller hochwertiger Funktionen, ist Payflink eine online Speisekarte, die Ihren Umsatz steigern wird.
+So einfach wie der Name, aber voller hochwertiger Funktionen, ist injoi eine online Speisekarte, die Ihren Umsatz steigern wird.
 
-Und Sie müssen nicht einmal stundenlang auf Google nach der besten online Speisekarte oder den besten Funktionen suchen, die diese haben sollte. Denn Payflink bietet mehrere Funktionen, die miteinander kombiniert werden können: online Speisekarte, Bestell- und Bezahlfunktionen, Gäste-Rufsystem, Take Away und Delivery, Filter für Allergene und Vorlieben uvm. Wow!
+Und Sie müssen nicht einmal stundenlang auf Google nach der besten online Speisekarte oder den besten Funktionen suchen, die diese haben sollte. Denn injoi bietet mehrere Funktionen, die miteinander kombiniert werden können: online Speisekarte, Bestell- und Bezahlfunktionen, Gäste-Rufsystem, Take Away und Delivery, Filter für Allergene und Vorlieben uvm. Wow!
 
 Habe ich Sie überzeugt? Perfekt!
 
-[Kontaktieren Sie unser Team](/de/kontakt/), um die Einbindung unserer hochwertigen online Speisekarte "Payflink" in Ihrem Betrieb zu starten.
+[Kontaktieren Sie unser Team](/de/kontakt/), um die Einbindung unserer hochwertigen online Speisekarte "injoi" in Ihrem Betrieb zu starten.
 
 Sie sind uns herzlich willkommen!🌹

@@ -12,28 +12,28 @@ import type {
 const productDe: Product = {
   description: 'Self-Order|Pay für Gastro',
   claim: 'Ihre Gäste bestellen und bezahlen ohne Wartezeit.',
-  name: 'Payflink',
-  image: '/assets/logo/Payflink_free.svg',
+  name: 'injoi',
+  image: '/assets/logo/injoi_free.svg',
 }
 
 const productFr: Product = {
   description: 'Self-Order|Pay pour la Gastronomie',
   claim: 'Vos clients commandent et paient sans attendre.',
-  name: 'Payflink',
-  image: '/assets/logo/Payflink_free.svg',
+  name: 'injoi',
+  image: '/assets/logo/injoi_free.svg',
 }
 
 const productEn: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
-  name: 'Payflink',
-  image: '/assets/logo/Payflink_free.svg',
+  name: 'injoi',
+  image: '/assets/logo/injoi_free.svg',
 }
 const productIt: Product = {
   description: 'Self-Order|Pay for Gastronomy',
   claim: 'Your guests order and pay without waiting.',
-  name: 'Payflink',
-  image: '/assets/logo/Payflink_free.svg',
+  name: 'injoi',
+  image: '/assets/logo/injoi_free.svg',
 }
 export const metaData: MetaData = {
   de: productDe,
@@ -90,7 +90,7 @@ const navigationDe: NavigationTree = [
       {
         href: '/de/funktionsumfang/',
         title: 'Funktionsumfang',
-        description: 'Detaillierte Auflistung aller Funktionen von Payflink.',
+        description: 'Detaillierte Auflistung aller Funktionen von injoi.',
       },
       {
         href: '/de/blog/',
@@ -160,7 +160,7 @@ const navigationFr: NavigationTree = [
       {
         href: '/fr/fonctions/',
         title: 'Étendue des fonctions',
-        description: 'Liste détaillée de toutes les fonctionnalités de Payflink.',
+        description: 'Liste détaillée de toutes les fonctionnalités de injoi.',
       },
       {
         href: '/fr/blog/',
@@ -230,7 +230,7 @@ const navigationEn: NavigationTree = [
       {
         href: '/en/functions/',
         title: 'Functions',
-        description: 'Detailed listing of all features of Payflink.',
+        description: 'Detailed listing of all features of injoi.',
       },
       {
         href: '/en/blog/',
@@ -353,7 +353,7 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/gaeste-rufsystem/',
       },
       {
-        title: 'Payflink oder Orderman',
+        title: 'injoi oder Orderman',
         href: '/de/orderman/',
       },
     ],
@@ -366,7 +366,7 @@ const siteMapDe: SiteMapGroup[] = [
         href: '/de/bestell-und-zahlungs-ablauf-gastro-betriebe/',
       },
       {
-        title: 'Inbetriebnahme von Payflink',
+        title: 'Inbetriebnahme von injoi',
         href: '/de/dokumentation/inbetriebnahme-injoi/',
       },
       {
@@ -448,7 +448,7 @@ const siteMapFr: SiteMapGroup[] = [
   //       href: '/fr/gaeste-rufsystem/',
   //     },
   //     {
-  //       title: 'Payflink ou alors Orderman',
+  //       title: 'injoi ou alors Orderman',
   //       href: '/fr/orderman/',
   //     },
   //   ],
@@ -461,7 +461,7 @@ const siteMapFr: SiteMapGroup[] = [
   //       href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
   //     },
   //     {
-  //       title: 'Mise en service de Payflink',
+  //       title: 'Mise en service de injoi',
   //       href: '/fr/dokumentation/inbetriebnahme-injoi/',
   //     },
   //     {
@@ -543,7 +543,7 @@ const siteMapEn: SiteMapGroup[] = [
   //       href: '/fr/gaeste-rufsystem/',
   //     },
   //     {
-  //       title: 'Payflink ou alors Orderman',
+  //       title: 'injoi ou alors Orderman',
   //       href: '/fr/orderman/',
   //     },
   //   ],
@@ -556,7 +556,7 @@ const siteMapEn: SiteMapGroup[] = [
   //       href: '/fr/bestell-und-zahlungs-ablauf-gastro-betriebe/',
   //     },
   //     {
-  //       title: 'Mise en service de Payflink',
+  //       title: 'Mise en service de injoi',
   //       href: '/fr/dokumentation/inbetriebnahme-injoi/',
   //     },
   //     {
