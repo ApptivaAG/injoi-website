@@ -8,11 +8,14 @@ import Button from './Button.astro'
     <slot name="intro">
       <h2>Fonction de commande injoi</h2>
       <p>
-        Voici comment vos hôtes voient notre fonction de commande, directement sur leur téléphone portable ou sur votre site web. 
-        Simple, facile, accueillant. Le tout sans installation d'une application et sans enregistrement.
+        Voici comment vos hôtes voient notre fonction de commande, directement
+        sur leur téléphone portable ou sur votre site web. Simple, facile,
+        accueillant. Le tout sans installation d'une application et sans
+        enregistrement.
       </p>
       <p>
-        Vous concevez votre menu selon vos goûts, coloré et avec des images ou juste avec du texte.
+        Vous concevez votre menu selon vos goûts, coloré et avec des images ou
+        juste avec du texte.
       </p>
     </slot>
 
@@ -28,7 +31,9 @@ import Button from './Button.astro'
             <slot name="desktop">
               <h3>injoi Démo</h3>
               <p>
-                Cette démo est un système de test. Aucune <b>commande ou paiement réel n'a lieu ici.</b> Testez injoi selon votre humeur.
+                Cette démo est un système de test. Aucune <b
+                  >commande ou paiement réel n'a lieu ici.</b
+                > Testez injoi selon votre humeur.
               </p>
               <ol>
                 <li>Ajoutez quelque chose à la commande.</li>
@@ -40,7 +45,8 @@ import Button from './Button.astro'
                     <li>date d'expiration <b>06/25</b></li>
                     <li>chiffre de contrôle (CVV) <b>123</b></li>
                   </ul>
-                  Ne vous inquiétez pas, aucune transaction réelle n'a lieu et par conséquent
+                  Ne vous inquiétez pas, aucune transaction réelle n'a lieu et par
+                  conséquent
                   <b>aucun montant ne sera débité.</b>
                 </li>
               </ol>
@@ -50,8 +56,8 @@ import Button from './Button.astro'
             <slot name="mobile">
               <h3>injoi Démo</h3>
               <p>
-                Payment avec VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, date d'expiration
-                06/25, CVV 123
+                Payment avec VISA Nr. 4900&nbsp;0000&nbsp;0000&nbsp;0094, date
+                d'expiration 06/25, CVV 123
               </p>
             </slot>
           </div>
@@ -60,7 +66,7 @@ import Button from './Button.astro'
           <iframe
             title="injoi App Demo"
             loading="lazy"
-            src="https://demo.injoi.app/"
+            src="https://demo.payflink.app/"
             frameborder="0"></iframe>
         </div>
       </div>
@@ -68,7 +74,9 @@ import Button from './Button.astro'
 
     <div class="desktop">
       <p>
-        <slot name="qr-code">...ou scannez le code QR avec votre téléphone portable.</slot>
+        <slot name="qr-code"
+          >...ou scannez le code QR avec votre téléphone portable.</slot
+        >
       </p>
     </div>
   </div>
@@ -77,7 +85,7 @@ import Button from './Button.astro'
       <iframe
         title="injoi App Demo"
         loading="lazy"
-        src="https://demo.injoi.app/"
+        src="https://demo.payflink.app/"
         frameborder="0"></iframe>
       <div class="overlay">
         <Dialog client:visible>
@@ -91,15 +99,17 @@ import Button from './Button.astro'
                 <slot name="desktop">
                   <h3>injoi Demo</h3>
                   <p>
-                    Cette démo est un système de test. Aucune <b>commande ou paiement réel n'a lieu ici.</b> Testez injoi selon votre humeur.
+                    Cette démo est un système de test. Aucune <b
+                      >commande ou paiement réel n'a lieu ici.</b
+                    > Testez injoi selon votre humeur.
                   </p>
                   <ol>
                     <li>Ajoutez quelque chose à la commande.</li>
                     <li>Senden Sie die Bestellung ab.</li>
                     <li>
-                      Par exemple, cliquez sur Twint lors du paiement. Ne vous inquiétez pas, aucune transaction réelle n'a lieu et par conséquent <b
-                        >aucune somme ne sera débitée.</b
-                      >
+                      Par exemple, cliquez sur Twint lors du paiement. Ne vous
+                      inquiétez pas, aucune transaction réelle n'a lieu et par
+                      conséquent <b>aucune somme ne sera débitée.</b>
                     </li>
                   </ol>
                 </slot>
@@ -108,8 +118,8 @@ import Button from './Button.astro'
                 <slot name="mobile">
                   <h3>injoi Démo</h3>
                   <p>
-                    Choisissez par exemple Twint lors du paiement. 
-                    Aucune somme ne sera débitée.
+                    Choisissez par exemple Twint lors du paiement. Aucune somme
+                    ne sera débitée.
                   </p>
                 </slot>
               </div>
@@ -118,7 +128,7 @@ import Button from './Button.astro'
               <iframe
                 title="injoi App Demo"
                 loading="lazy"
-                src="https://demo.injoi.app/"
+                src="https://demo.payflink.app/"
                 frameborder="0"></iframe>
             </div>
           </div>

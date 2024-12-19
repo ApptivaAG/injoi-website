@@ -8,11 +8,12 @@ import Button from './Button.astro'
     <slot name="intro">
       <h2>Demo of the injoi app</h2>
       <p>
-        The injoi demo shows how the menu is displayed, how the order
-        process works and how the payment processing takes place.
+        The injoi demo shows how the menu is displayed, how the order process
+        works and how the payment processing takes place.
       </p>
       <p>
-        You design your menu according to your taste, colorful and with pictures or just with text.
+        You design your menu according to your taste, colorful and with pictures
+        or just with text.
       </p>
     </slot>
 
@@ -28,8 +29,8 @@ import Button from './Button.astro'
             <slot name="desktop">
               <h3>injoi Demo</h3>
               <p>
-                This demo is on a test system. <b>No real orders or payments</b> take
-                place. Test injoi without hesitation.
+                This demo is on a test system. <b>No real orders or payments</b>
+                take place. Test injoi without hesitation.
               </p>
               <ol>
                 <li>Add something to the order.</li>
@@ -41,8 +42,10 @@ import Button from './Button.astro'
                     <li>Expiration date <b>06/25</b></li>
                     <li>Verification (CVV) <b>123</b></li>
                   </ul>
-                  Do not worry, no real transaction takes place and therefore <b> 
-                  no money will be transfererd.</b>
+                  Do not worry, no real transaction takes place and therefore <b
+                  >
+                    no money will be transfererd.</b
+                  >
                 </li>
               </ol>
             </slot>
@@ -61,7 +64,7 @@ import Button from './Button.astro'
           <iframe
             title="injoi App Demo"
             loading="lazy"
-            src="https://demo.injoi.app/"
+            src="https://demo.payflink.app/"
             frameborder="0"></iframe>
         </div>
       </div>
@@ -69,7 +72,9 @@ import Button from './Button.astro'
 
     <div class="desktop">
       <p>
-        <slot name="qr-code">...or scan the QR code with your mobile phone.</slot>
+        <slot name="qr-code"
+          >...or scan the QR code with your mobile phone.</slot
+        >
       </p>
     </div>
   </div>
@@ -78,7 +83,7 @@ import Button from './Button.astro'
       <iframe
         title="injoi App Demo"
         loading="lazy"
-        src="https://demo.injoi.app/"
+        src="https://demo.payflink.app/"
         frameborder="0"></iframe>
       <div class="overlay">
         <Dialog client:visible>
@@ -92,8 +97,9 @@ import Button from './Button.astro'
                 <slot name="desktop">
                   <h3>injoi Demo</h3>
                   <p>
-                    This demo is on a test system. <b>No real orders or payments</b> take
-                    place. Test injoi without hesitation.
+                    This demo is on a test system. <b
+                      >No real orders or payments</b
+                    > take place. Test injoi without hesitation.
                   </p>
                   <ol>
                     <li>Add something to the order.</li>
@@ -121,7 +127,7 @@ import Button from './Button.astro'
               <iframe
                 title="injoi App Demo"
                 loading="lazy"
-                src="https://demo.injoi.app/"
+                src="https://demo.payflink.app/"
                 frameborder="0"></iframe>
             </div>
           </div>
