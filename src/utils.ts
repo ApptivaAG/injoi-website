@@ -67,7 +67,7 @@ export const mkHeroImages =
     })
     const openGraphImage = src
       ? new URL(src, base).href
-      : new URL('/payflink-bestell-app.png', base).href
+      : new URL('/injoi-bestell-app.png', base).href
 
     return { image: img, fixed: openGraphImage }
   }

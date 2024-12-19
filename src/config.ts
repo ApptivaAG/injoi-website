@@ -367,7 +367,7 @@ const siteMapDe: SiteMapGroup[] = [
       },
       {
         title: 'Inbetriebnahme von Payflink',
-        href: '/de/dokumentation/inbetriebnahme-payflink/',
+        href: '/de/dokumentation/inbetriebnahme-injoi/',
       },
       {
         title: 'Speisekarte bearbeiten',
@@ -462,7 +462,7 @@ const siteMapFr: SiteMapGroup[] = [
   //     },
   //     {
   //       title: 'Mise en service de Payflink',
-  //       href: '/fr/dokumentation/inbetriebnahme-payflink/',
+  //       href: '/fr/dokumentation/inbetriebnahme-injoi/',
   //     },
   //     {
   //       title: 'Modifier le menu',
@@ -557,7 +557,7 @@ const siteMapEn: SiteMapGroup[] = [
   //     },
   //     {
   //       title: 'Mise en service de Payflink',
-  //       href: '/fr/dokumentation/inbetriebnahme-payflink/',
+  //       href: '/fr/dokumentation/inbetriebnahme-injoi/',
   //     },
   //     {
   //       title: 'Modifier le menu',

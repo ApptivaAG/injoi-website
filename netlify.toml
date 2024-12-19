@@ -40,15 +40,15 @@
 
 [[redirects]]
   from = "/de/blog/gaston-datenschutz"
-  to = "/de/blog/payflink-datenschutz"
+  to = "/de/blog/injoi-datenschutz"
 
 [[redirects]]
   from = "/de/dokumentation/inbetriebnahme-gaston"
-  to = "/de/dokumentation/inbetriebnahme-payflink"
+  to = "/de/dokumentation/inbetriebnahme-injoi"
 
 [[redirects]]
   from = "/gaston-bestell-app.png"
-  to = "/payflink-bestell-app.png"
+  to = "/injoi-bestell-app.png"
 
 [[redirects]]
   from = "/de/about"
