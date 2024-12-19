@@ -1,0 +1,6 @@
+# Redirects from what the browser requests to what we serve
+/de/blog/freibad-mit-payflink               /de/blog/freibad-mit-injoi
+/de/blog/payflink-datenschutz               /de/blog/injoi-datenschutz
+/de/blog/terrasse-mit-payflink              /de/blog/terrasse-mit-injoi
+/de/dokumentatiion/inbetriebnahme-payflink  /de/dokumentatiion/inbetriebnahme-injoi
+
