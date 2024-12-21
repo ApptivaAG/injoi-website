@@ -8,6 +8,7 @@ import Footer from '@components/Footer.astro'
 
 import { metaData, generalTitle } from 'src/config'
 import { addSlashToEndIfMissing, getCurrentLanguage } from 'src/utils'
+import Announcement from '@components/Announcement.astro'
 // import Announcement from '@components/Announcement.astro'
 
 export type Props = {
@@ -97,14 +98,14 @@ const production = import.meta.env.CONTEXT === 'production'
 
   <body>
     <Header />
-    <!-- <Announcement>
+    <Announcement>
       {lang === 'de' ? 
-      (<p><b>Gaston heisst jetzt injoi!</b>&emsp;<a href="/de/blog/gaston-ist-jetzt-injoi/">➜&nbsp;Zum&nbsp;Blogbeitrag</a></p>) 
+      (<p>Payflink heisst jetzt <b>injoi!</b></p>) 
       : lang === 'fr' ?
-      (<p><b>Gaston s'appelle maitenant injoi!</b>&emsp;<a href="/fr/blog/gaston-est-maitenant-injoi/">➜&nbsp;Vers&nbsp;le&nbsp;blog</a></p>)
+      (<p>Payflink s'appelle maitenant <b>injoi!</b></p>)
       :
-      <p><b>Gaston is now injoi!</b>&emsp;<a href="/en/blog/gaston-is-now-injoi/">➜&nbsp;To&nbsp;the&nbsp;blogpost</a></p>}
-    </Announcement> -->
+      <p>Payflink is now <b>injoi!</b></p>}
+    </Announcement>
     <main>
       <slot />
       {
