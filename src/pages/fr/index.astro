@@ -3,7 +3,6 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 
-import FixedPicture from '@components/FixedPicture.astro'
 import Démo from '@components/Démo.astro'
 import { metaData } from 'src/config'
 // import BlogTeaser from '@components/BlogTeaser.astro'
@@ -15,13 +14,13 @@ import Customers from '@components/Customers.astro'
 import type { CallToAction } from 'src/types'
 // import Figure from '@components/Figure.astro'
 import KindOfEstablishmentsFr from '@components/KindOfEstablishmentsFr.astro'
+import { Picture } from 'astro:assets'
 
 const { fr } = metaData
 
 const callToActionLinks: CallToAction[] = [
   { text: 'Démo', href: '#das-ist-gaston' },
 ]
-
 
 const description =
   'injoi permet aux clients de commander et de payer rapidement et facilement. Peu importe que les invités soient dans votre entreprise, en déplacement ou à la maison.'
@@ -32,7 +31,7 @@ const description =
     <Container>
       <Hero
         name={fr.name}
-        image={}
+        image=""
         claim={fr.claim}
         from="Développé à Lucerne"
         animation={{
@@ -51,11 +50,14 @@ const description =
         <div style="flex: 1">
           <h2>Le plaisir en trois étapes</h2>
           <p>
-            Avec injoi, les clients commandent et paient rapidement et simplement dans leur navigateur. injoi fonctionne sur les téléphones portables de vos clients, sans téléchargement d'application ni installation.
+            Avec injoi, les clients commandent et paient rapidement et
+            simplement dans leur navigateur. injoi fonctionne sur les téléphones
+            portables de vos clients, sans téléchargement d'application ni
+            installation.
           </p>
-         
-            <ButtonLink href="#das-ist-gaston">Démo</ButtonLink>
-         
+
+          <ButtonLink href="#das-ist-gaston">Démo</ButtonLink>
+
           <img
             src="/assets/illustrations/gaston-delivers.svg"
             class="gaston-image"
@@ -69,7 +71,9 @@ const description =
             <div class="description-wrapper">
               <h3>Scannez le code QR</h3>
               <p>
-                Vos clients scannent un code QR sur vos tables, ce qui ouvre logiciel de commande dans le navigateur. Aucun téléchargement ni installation n'est nécessaire.
+                Vos clients scannent un code QR sur vos tables, ce qui ouvre
+                logiciel de commande dans le navigateur. Aucun téléchargement ni
+                installation n'est nécessaire.
               </p>
             </div>
             <div class="image-wrapper">
@@ -86,7 +90,8 @@ const description =
             <div class="description-wrapper">
               <h3>Commander</h3>
               <p>
-                Vos clients commandent selon leur envie un menu complet ou alors un second verre ou un second plat.
+                Vos clients commandent selon leur envie un menu complet ou alors
+                un second verre ou un second plat.
               </p>
             </div>
             <div class="image-wrapper">
@@ -103,7 +108,9 @@ const description =
             <div class="description-wrapper">
               <h3>Payer</h3>
               <p>
-                Vos clients auront la possibilité de payer directement sur leurs smartphone par tout les moyen numérique comme par exemple: carte de crédit, Twint ou par cash au près du personnels.
+                Vos clients auront la possibilité de payer directement sur leurs
+                smartphone par tout les moyen numérique comme par exemple: carte
+                de crédit, Twint ou par cash au près du personnels.
               </p>
             </div>
             <div class="image-wrapper">
@@ -125,9 +132,10 @@ const description =
     <Container>
       <div class="columns">
         <div>
-          <h2>Voici comment injoi  vous aide</h2>
+          <h2>Voici comment injoi vous aide</h2>
           <p>
-            injoi assure non seulement le bonheur des clients, mais aussi la satisfaction du personnel.
+            injoi assure non seulement le bonheur des clients, mais aussi la
+            satisfaction du personnel.
           </p>
           <img
             src="/assets/illustrations/gaston-hilft.svg"
@@ -141,19 +149,26 @@ const description =
           <li style="list-style: '🙅‍♂️  ';">
             <h3>Gérer le manque de personnel</h3>
             <p>
-              Trouver du personnel est un très grand défi. injoi prend en charge une partie du travail de service pour que les serveurs ayent une flexibilité adecoiter à travailler et à pouvoir acceuir les client. votre entreprise fonctionne même avec moins de personnel.
+              Trouver du personnel est un très grand défi. injoi prend en charge
+              une partie du travail de service pour que les serveurs ayent une
+              flexibilité adecoiter à travailler et à pouvoir acceuir les
+              client. votre entreprise fonctionne même avec moins de personnel.
             </p>
           </li>
           <li style="list-style: '😍  ';">
             <h3>Rendre les hôtes heureux</h3>
             <p>
-              Vos clients sont impatient. Avec  l'aide de injoi, ils peuvent scanner commander et payer sans attendre.
+              Vos clients sont impatient. Avec l'aide de injoi, ils peuvent
+              scanner commander et payer sans attendre.
             </p>
           </li>
           <li style="list-style: '💁‍♀️  ';">
             <h3>Plus de temps pour vos invités</h3>
             <p>
-              Vous êtes hôte(sse) vous aimeriez "accueillir" autant que possible. injoi se charge d'une partie du travail pour que vous et votre personnel ayez plus de temps pour subvenir aux besoins de vos invités.
+              Vous êtes hôte(sse) vous aimeriez "accueillir" autant que
+              possible. injoi se charge d'une partie du travail pour que vous et
+              votre personnel ayez plus de temps pour subvenir aux besoins de
+              vos invités.
             </p>
           </li>
         </ul>
@@ -172,7 +187,9 @@ const description =
       <h2>Ce que disent les clients</h2>
       <div class="columns">
         <p class="introduction">
-          Dans l'ensemble, injoi est très bien accueilli par les clients. Lors d'une enquête menée auprès de <b>plus de 600 personnes</b> <b>85.1%</b> ont déclaré qu'ils <b>commanderaient à nouveau</b> avec injoi!
+          Dans l'ensemble, injoi est très bien accueilli par les clients. Lors
+          d'une enquête menée auprès de <b>plus de 600 personnes</b>
+          <b>85.1%</b> ont déclaré qu'ils <b>commanderaient à nouveau</b> avec injoi!
         </p>
         <div class="rating">
           <img
@@ -191,12 +208,11 @@ const description =
 
   <section id="verkaufskanaele" class="background">
     <Container>
-      <h2>Canaux de vente
-      </h2>
+      <h2>Canaux de vente</h2>
       <p>
-        injoi peut être utilisé dans plusieurs  situations très différentes. 
-        Les clients peuvent commander directement depuis leur table au restaurant,
-        à emporter ou même livré chez eux :
+        injoi peut être utilisé dans plusieurs situations très différentes. Les
+        clients peuvent commander directement depuis leur table au restaurant, à
+        emporter ou même livré chez eux :
       </p>
       <ul class="horizontal-list">
         <li>
@@ -237,7 +253,9 @@ const description =
         </li>
       </ul>
       <p>
-        Vous ne savez pas si injoi couvre vos souhaits? N'hésitez pas à nous <a href="/fr/contacter/">contacter</a>.
+        Vous ne savez pas si injoi couvre vos souhaits? N'hésitez pas à nous <a
+          href="/fr/contacter/">contacter</a
+        >.
       </p>
     </Container>
   </section>
@@ -246,7 +264,9 @@ const description =
     <Container>
       <h2>Convient à de nombreux concepts de restauration</h2>
       <p style="margin-bottom: 2em;">
-        Qu'il s'agisse d'un restaurant, d'un bar ou d'un snack,sedi a thuhet injoi convient à la plupart des concepts de restauration. Voici a quelles établissement injoi:
+        Qu'il s'agisse d'un restaurant, d'un bar ou d'un snack,sedi a thuhet
+        injoi convient à la plupart des concepts de restauration. Voici a
+        quelles établissement injoi:
       </p>
       <KindOfEstablishmentsFr />
     </Container>
@@ -256,7 +276,8 @@ const description =
     <Container>
       <h2>Fonctionne partout</h2>
       <p>
-        Notre logiciel de commande fonctionne sur presque tous les appareils, sans installation pour vos invités.
+        Notre logiciel de commande fonctionne sur presque tous les appareils,
+        sans installation pour vos invités.
       </p>
       <ul class="horizontal-list same-height">
         <li>
@@ -317,10 +338,13 @@ const description =
         <div style="flex: 1;">
           <h2>Peut beaucoup remplacer</h2>
           <p>
-            injoi, est un concept révolutionnaire et peut en conséquence remplacer de nombreux appareils.
-            Des appareils qui ont perduré pendant des décennies peuvent désormais être remis en question.
-            Pourquoi a-t-on besoin d'une caisse si les clients paient directement via une application?
-            Pourquoi avoir un terminal de caisse si les clients paient par carte de crédit et Twint dans injoi?
+            injoi, est un concept révolutionnaire et peut en conséquence
+            remplacer de nombreux appareils. Des appareils qui ont perduré
+            pendant des décennies peuvent désormais être remis en question.
+            Pourquoi a-t-on besoin d'une caisse si les clients paient
+            directement via une application? Pourquoi avoir un terminal de
+            caisse si les clients paient par carte de crédit et Twint dans
+            injoi?
           </p>
           <p>Vous voyez où nous allons?</p>
           <div class="center" style="margin-block: 3em;">
@@ -331,8 +355,9 @@ const description =
               height="236"
             />
             <p style="font-size: 0.8em; margin-top: 2em;">
-              image d'icône. Merci de ne rien jeter! 
-              Il y a suffisamment d'établissements de restauration qui vous enlèveront vos appareils. 😉
+              image d'icône. Merci de ne rien jeter! Il y a suffisamment
+              d'établissements de restauration qui vous enlèveront vos
+              appareils. 😉
             </p>
           </div>
         </div>
@@ -347,26 +372,27 @@ const description =
     <Container>
       <h2>Votre menu, votre style</h2>
       <p>
-        Votre établissement a un style unique et personnalisé. 
-        Votre menu doit le refléter. Vous pouvez en modifier l'aspect à tout moment et gérer vous-même les images et les graphiques des catégories et des articles.
+        Votre établissement a un style unique et personnalisé. Votre menu doit
+        le refléter. Vous pouvez en modifier l'aspect à tout moment et gérer
+        vous-même les images et les graphiques des catégories et des articles.
       </p>
       <ul class="horizontal-list shadow">
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/el-mosquito.png')}
             alt="El-Mosquito"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/habsburg.png')}
             alt="Habsburg-Bar"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/sugoisushi.png')}
             alt="Sugoi Sushi"
             height={480}
@@ -377,13 +403,12 @@ const description =
   </section>
 
   <section>
-
     <Container>
       <h2>Nos partenaires</h2>
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/flm.png')}
               alt="FLM Kassensysteme"
               height={120}
@@ -393,7 +418,7 @@ const description =
         </li>
         <li>
           <a href="https://www.pacha.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/pacha.png')}
               alt="Pacha Kassensysteme"
               height={120}
@@ -403,7 +428,7 @@ const description =
         </li>
         <li>
           <a href="https://www.bkpos.ch/hiopos-kassensystem">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/hiopos.png')}
               alt="HIOPOS Kassensysteme"
               height={40}
@@ -412,7 +437,7 @@ const description =
           </a>
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/partners/digital-enterprise.png')}
             alt="Digital Enterprise"
             height={40}

@@ -2,8 +2,6 @@
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
-
-import FixedPicture from '@components/FixedPicture.astro'
 import Demo from '@components/Demo.astro'
 import { metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
@@ -14,6 +12,7 @@ import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
 import ButtonList from '@components/ButtonList.astro'
 import type { CallToAction } from 'src/types'
+import { Picture } from 'astro:assets'
 // import Figure from '@components/Figure.astro'
 
 const { de } = metaData
@@ -22,7 +21,6 @@ const callToActionLinks: CallToAction[] = [
   { text: 'Demo', href: '#das-ist-gaston' },
   //{ text: 'Angebot anfordern', href: '/de/preise/' },
 ]
-
 
 const description =
   'injoi erlaubt es den Gästen schnell und einfach zu bestell und bezahlen. Dabei spielt es keine Rolle, ob die Gäste in ihrem Betrieb, unterwegs oder Zuhause sind.'
@@ -33,7 +31,7 @@ const description =
     <Container>
       <Hero
         name={de.name}
-        image={}
+        image=""
         claim={de.claim}
         from="In Luzern entwickelt"
         animation={{
@@ -257,8 +255,9 @@ const description =
         </li>
       </ul>
       <p>
-        Sind Sie nicht sicher, ob injoi Ihr Szenario abdeckt? Nehmen Sie mit
-        uns <a href="kontakt/">Kontakt</a> auf.
+        Sind Sie nicht sicher, ob injoi Ihr Szenario abdeckt? Nehmen Sie mit uns <a
+          href="kontakt/">Kontakt</a
+        > auf.
       </p>
     </Container>
   </section>
@@ -380,21 +379,21 @@ const description =
       </p>
       <ul class="horizontal-list shadow">
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/el-mosquito.png')}
             alt="El-Mosquito"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/habsburg.png')}
             alt="Habsburg-Bar"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/sugoisushi.png')}
             alt="Sugoi Sushi"
             height={480}
@@ -432,7 +431,7 @@ const description =
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/flm.png')}
               alt="FLM Kassensysteme"
               height={120}
@@ -442,7 +441,7 @@ const description =
         </li>
         <li>
           <a href="https://www.pacha.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/pacha.png')}
               alt="Pacha Kassensysteme"
               height={120}
@@ -452,7 +451,7 @@ const description =
         </li>
         <li>
           <a href="https://www.bkpos.ch/hiopos-kassensystem">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/hiopos.png')}
               alt="HIOPOS Kassensysteme"
               height={40}
@@ -461,7 +460,7 @@ const description =
           </a>
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/partners/digital-enterprise.png')}
             alt="Digital Enterprise"
             height={40}

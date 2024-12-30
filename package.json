@@ -11,24 +11,24 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.12.1",
-    "@astrojs/mdx": "^0.14.0",
-    "@astrojs/partytown": "^1.0.2",
-    "@astrojs/preact": "^1.2.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/solid-js": "^1.2.3",
-    "@netlify/functions": "^1.4.0",
-    "astro": "1.9.2",
-    "astro-seo": "^0.7.0",
-    "netlify-cli": "^12.7.2",
-    "preact": "^10.11.3",
-    "prettier-plugin-astro": "^0.7.2",
-    "sass": "^1.57.1",
-    "sharp": "^0.31.3",
-    "solid-js": "^1.6.9",
-    "vitest": "^0.27.2"
+    "@astrojs/mdx": "^4.0.3",
+    "@astrojs/partytown": "^2.1.2",
+    "@astrojs/sitemap": "^3.2.1",
+    "@netlify/functions": "^3.0.0",
+    "astro": "5.1.1",
+    "astro-seo": "^0.8.4",
+    "netlify-cli": "^17.38.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "sass": "^1.83.0",
+    "sharp": "^0.33.5",
+    "vitest": "^2.1.8"
   },
   "dependencies": {
-    "node-fetch": "^3.3.0"
+    "@astrojs/react": "^4.1.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "node-fetch": "^3.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

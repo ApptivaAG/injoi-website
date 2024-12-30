@@ -1,7 +1,5 @@
 ---
-import FixedPicture from "./FixedPicture.astro";
-import { Picture } from '@astrojs/image/components';
-import type { ImageMetadata } from "@astrojs/image/dist";
+import { Picture } from 'astro:assets'
 
 type Size = 'medium' | 'article'
 export type Props = {
@@ -13,13 +11,21 @@ export type Props = {
 const { src, caption, width, size = 'medium' } = Astro.props as Props
 
 const imageWidth = width ? width : 300
-
 ---
 
 <figure>
-  {size === 'medium' ?
-  <FixedPicture src={src} width={imageWidth} alt={caption} /> :
-  <Picture src={src} sizes="(max-width: 700px) 90vw, 576px" widths={[300, 400, 600, 800, 1200]} alt={caption} />}
+  {
+    size === 'medium' ? (
+      <Picture src={src} width={imageWidth} alt={caption} />
+    ) : (
+      <Picture
+        src={src}
+        sizes="(max-width: 700px) 90vw, 576px"
+        widths={[300, 400, 600, 800, 1200]}
+        alt={caption}
+      />
+    )
+  }
   <figcaption class={`width-${imageWidth}`}>{caption}</figcaption>
 </figure>
 

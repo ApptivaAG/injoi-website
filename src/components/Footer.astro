@@ -4,7 +4,7 @@ import { getCurrentLanguage, mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro'
 import Container from './Container.astro'
 import Sitemap from './Sitemap.astro'
-import Dialog from '@components/Dialog'
+import Dialog from '@components/react/Dialog'
 import Newsletter from '@components/Newsletter'
 import Button from './Button.astro'
 
@@ -50,10 +50,10 @@ const links = callToActionLinks[lang]
       </p>
     </div>
     <div>
-      <Dialog client:load>
+      <Dialog client:only>
         <Button slot="openElement">{footerInfo.newsletter}</Button>
         <div class="newsletter-wrapper">
-          <Newsletter client:visible />
+          <!-- <Newsletter client:visible /> -->
         </div>
       </Dialog>
       <p>

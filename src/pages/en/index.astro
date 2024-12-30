@@ -3,21 +3,16 @@ import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
 
-import FixedPicture from '@components/FixedPicture.astro'
-import Démo from '@components/Démo.astro'
 import { metaData } from 'src/config'
-import BlogTeaser from '@components/BlogTeaser.astro'
 import Testimonials from '@components/Testimonials.astro'
-import CanReplaceFr from '@components/CanReplaceFr.astro'
 import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
 import ButtonList from '@components/ButtonList.astro'
 import type { CallToAction } from 'src/types'
-import Figure from '@components/Figure.astro'
-import KindOfEstablishmentsFr from '@components/KindOfEstablishmentsFr.astro'
 import DemoEn from '@components/DemoEn.astro'
 import KindOfEstablishmentsEn from '@components/KindOfEstablishmentsEn.astro'
 import CanReplaceEn from '@components/CanReplaceEn.astro'
+import { Picture } from 'astro:assets'
 
 const { en } = metaData
 
@@ -25,7 +20,6 @@ const callToActionLinks: CallToAction[] = [
   { text: 'Try Demo', href: '#das-ist-gaston' },
   //{ text: 'Angebot anfordern', href: '/de/preise/' },
 ]
-
 
 const description =
   "injoi the digital menu allows guests to order and pay quickly and easily. It doesn't matter if the guests are in their establishment, on the road or at home. injoi supports ordering in your business, Take Away and delivery."
@@ -36,7 +30,7 @@ const description =
     <Container>
       <Hero
         name={en.name}
-        image={}
+        image=""
         claim={en.claim}
         from="Developed in Lucerne"
         animation={{
@@ -55,7 +49,9 @@ const description =
         <div style="flex: 1">
           <h2>Three steps to enjoyment</h2>
           <p>
-            With injoi, guests order and pay quickly and easily in their browser. injoi runs on your guests' cell phones, without app download or installation
+            With injoi, guests order and pay quickly and easily in their
+            browser. injoi runs on your guests' cell phones, without app
+            download or installation
           </p>
           <ButtonList>
             <!-- <ButtonLink href="bestell-und-zahlungs-ablauf-gastro-betriebe/"
@@ -76,7 +72,8 @@ const description =
             <div class="description-wrapper">
               <h3>Scan QR code</h3>
               <p>
-                Guests scan a QR code on your tables, which opens the order app in the browser. No download or installation is required.
+                Guests scan a QR code on your tables, which opens the order app
+                in the browser. No download or installation is required.
               </p>
             </div>
             <div class="image-wrapper">
@@ -93,7 +90,8 @@ const description =
             <div class="description-wrapper">
               <h3>Order</h3>
               <p>
-                Guests order an entire menu or just another drink or dish as they please.
+                Guests order an entire menu or just another drink or dish as
+                they please.
               </p>
             </div>
             <div class="image-wrapper">
@@ -110,7 +108,9 @@ const description =
             <div class="description-wrapper">
               <h3>Pay</h3>
               <p>
-                Your guests pay directly by app or staff. In the app, guests conveniently pay via Twint, credit card or other digital payment method.
+                Your guests pay directly by app or staff. In the app, guests
+                conveniently pay via Twint, credit card or other digital payment
+                method.
               </p>
             </div>
             <div class="image-wrapper">
@@ -134,7 +134,8 @@ const description =
         <div>
           <h2>How injoi helps</h2>
           <p>
-            injoi not only makes for happy guests, it also makes for happy staff.
+            injoi not only makes for happy guests, it also makes for happy
+            staff.
           </p>
           <img
             src="/assets/illustrations/gaston-hilft.svg"
@@ -148,19 +149,23 @@ const description =
           <li style="list-style: '🙅‍♂️  ';">
             <h3>Overcoming staff shortages</h3>
             <p>
-              Finding staff is a very big challenge. injoi takes on some of the service work so your business can function with fewer staff.
+              Finding staff is a very big challenge. injoi takes on some of the
+              service work so your business can function with fewer staff.
             </p>
           </li>
           <li style="list-style: '😍  ';">
             <h3>Make guests happy</h3>
             <p>
-              Your guests don't like to wait? With the injoi app, they can order and pay without waiting.
+              Your guests don't like to wait? With the injoi app, they can order
+              and pay without waiting.
             </p>
           </li>
           <li style="list-style: '💁‍♀️  ';">
             <h3>More time for your guests</h3>
             <p>
-              You are a host:in. You would like to "host" as much as possible. injoi takes some of the work off your hands so you and your staff have more time to cater to your guests' needs.
+              You are a host:in. You would like to "host" as much as possible.
+              injoi takes some of the work off your hands so you and your staff
+              have more time to cater to your guests' needs.
             </p>
           </li>
         </ul>
@@ -170,7 +175,7 @@ const description =
 
   <section id="das-ist-gaston" class="background">
     <Container>
-      <DemoEn/>
+      <DemoEn />
     </Container>
   </section>
 
@@ -179,7 +184,10 @@ const description =
       <h2>What guests say</h2>
       <div class="columns">
         <p class="introduction">
-          injoi is very well received by guests overall. In a survey of <b>over 600 people</b> <b>85.1%</b> said they would <b>order with injoi again!</b>
+          injoi is very well received by guests overall. In a survey of <b
+            >over 600 people</b
+          >
+          <b>85.1%</b> said they would <b>order with injoi again!</b>
         </p>
         <div class="rating">
           <img
@@ -200,9 +208,8 @@ const description =
     <Container>
       <h2>Sales channels</h2>
       <p>
-        injoi can be used in a wide variety of situations. 
-        Guests can order directly in your restaurant from the table, 
-        from home or on the go for:
+        injoi can be used in a wide variety of situations. Guests can order
+        directly in your restaurant from the table, from home or on the go for:
       </p>
       <ul class="horizontal-list">
         <li>
@@ -243,7 +250,9 @@ const description =
         </li>
       </ul>
       <p>
-        Not sure if injoi covers your scenario? Don't hesitate to <a href="/en/contact/">contact</a> us.
+        Not sure if injoi covers your scenario? Don't hesitate to <a
+          href="/en/contact/">contact</a
+        > us.
       </p>
     </Container>
   </section>
@@ -252,8 +261,11 @@ const description =
     <Container>
       <h2>Fits many restaurant concepts</h2>
       <p style="margin-bottom: 2em;">
-        Whether it's a dining restaurant, bar or snack bar, injoi fits most hospitality concepts. We are often asked which establishments injoi fits best for. 
-        Our findings so far are as follows: injoi fits when guests place and pay for orders. It doesn't matter so much what your offering or service concept is.
+        Whether it's a dining restaurant, bar or snack bar, injoi fits most
+        hospitality concepts. We are often asked which establishments injoi fits
+        best for. Our findings so far are as follows: injoi fits when guests
+        place and pay for orders. It doesn't matter so much what your offering
+        or service concept is.
       </p>
       <KindOfEstablishmentsEn />
     </Container>
@@ -263,7 +275,8 @@ const description =
     <Container>
       <h2>Runs everywhere</h2>
       <p>
-        Our order app runs on almost all devices, without installation for your guests.
+        Our order app runs on almost all devices, without installation for your
+        guests.
       </p>
       <ul class="horizontal-list same-height">
         <li>
@@ -324,10 +337,11 @@ const description =
         <div style="flex: 1;">
           <h2>Can replace many things</h2>
           <p>
-            injoi is a revolutionary concept and can replace many devices accordingly. 
-            Devices that have lasted for decades can now be questioned. 
-            Why do you need a cash register when guests pay directly through an app? 
-            Why have a KK terminal when guests pay in injoi with credit cards and Twint?
+            injoi is a revolutionary concept and can replace many devices
+            accordingly. Devices that have lasted for decades can now be
+            questioned. Why do you need a cash register when guests pay directly
+            through an app? Why have a KK terminal when guests pay in injoi with
+            credit cards and Twint?
           </p>
           <p>Do you see where the journey is going?</p>
           <div class="center" style="margin-block: 3em;">
@@ -338,8 +352,8 @@ const description =
               height="236"
             />
             <p style="font-size: 0.8em; margin-top: 2em;">
-              Icon picture. Please don't throw anything away! 
-              There are enough catering establishments that will take away your devices. 😉
+              Icon picture. Please don't throw anything away! There are enough
+              catering establishments that will take away your devices. 😉
             </p>
           </div>
         </div>
@@ -354,26 +368,27 @@ const description =
     <Container>
       <h2>Your menu, your style</h2>
       <p>
-        Your business has a unique style. Your menu should reflect this. 
-        You can customize the look at any time and also maintain the images and graphics for categories and items yourself.
+        Your business has a unique style. Your menu should reflect this. You can
+        customize the look at any time and also maintain the images and graphics
+        for categories and items yourself.
       </p>
       <ul class="horizontal-list shadow">
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/el-mosquito.png')}
             alt="El-Mosquito"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/habsburg.png')}
             alt="Habsburg-Bar"
             height={480}
           />
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/sugoisushi.png')}
             alt="Sugoi Sushi"
             height={480}
@@ -410,7 +425,7 @@ const description =
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/flm.png')}
               alt="FLM Kassensysteme"
               height={120}
@@ -420,7 +435,7 @@ const description =
         </li>
         <li>
           <a href="https://www.pacha.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/pacha.png')}
               alt="Pacha Kassensysteme"
               height={120}
@@ -430,7 +445,7 @@ const description =
         </li>
         <li>
           <a href="https://www.bkpos.ch/hiopos-kassensystem">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/hiopos.png')}
               alt="HIOPOS Kassensysteme"
               height={40}
@@ -439,7 +454,7 @@ const description =
           </a>
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/partners/digital-enterprise.png')}
             alt="Digital Enterprise"
             height={40}

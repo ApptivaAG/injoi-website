@@ -1,12 +1,9 @@
 ---
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
-import { takeSortedBlogPosts } from 'src/utils'
-import type { BlogPostFrontMatter } from 'src/types'
+import { getCollection } from 'astro:content'
 
-const blogs = await Astro.glob<BlogPostFrontMatter>('./blog/**/*.mdx')
-
-const sortedBlogs = takeSortedBlogPosts(blogs, 'de')
+const allBlogPosts = await getCollection('blog')
 
 const description =
   'Der neuste Klatsch und Tratsch, den injoi aufgeschnappt hat.'
@@ -16,15 +13,15 @@ const description =
   <Container size="small">
     <h1>Blog: Neuigkeiten zu injoi</h1>
     {
-      sortedBlogs.map((post) => (
+      allBlogPosts.map((post) => (
         <article>
-          <a href={post.url}>
-            <h2>{post.frontmatter.title}</h2>
+          <a href={post.id}>
+            <h2>{post.data.title}</h2>
           </a>
-          <p>{post.frontmatter.description}</p>
+          <p>{post.data.description}</p>
           <p class="meta">
-            {new Date(post.frontmatter.date).toLocaleDateString('de')} -{' '}
-            {post.frontmatter.author}
+            {new Date(post.data.date).toLocaleDateString('de')} -{' '}
+            {post.data.author}
           </p>
         </article>
       ))

@@ -1,5 +1,6 @@
 ---
-import type { BlogPostFrontMatter, Language } from 'src/types'
+import { getCollection } from 'astro:content'
+import type { Language } from 'src/types'
 import { takeSortedBlogPosts } from 'src/utils'
 
 export interface Props {
@@ -8,15 +9,15 @@ export interface Props {
 
 const { language } = Astro.props as Props
 
-const blogs = await Astro.glob<BlogPostFrontMatter>('../pages/*/blog/**/*.mdx')
-const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
+const sortedBlogs = await getCollection('blog')
+// const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
 ---
 
 <ul class="teaser">
   {
     sortedBlogs.map((post) => (
       <li>
-        <a href={post.url}>{post.frontmatter.title}</a>
+        <a href={post.id}>{post.data.title}</a>
       </li>
     ))
   }

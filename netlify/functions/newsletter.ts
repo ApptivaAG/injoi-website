@@ -6,7 +6,7 @@ const headers = new Headers({
 })
 const list_id = 'dfd2ec933f'
 
-const handler: Handler = async (event, context) => {
+const handler: Handler = async (event) => {
   if (!event.body) {
     return {
       statusCode: 200,

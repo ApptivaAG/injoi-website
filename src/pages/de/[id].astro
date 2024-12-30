@@ -1,0 +1,105 @@
+---
+import Container from '@components/Container.astro'
+import type { Language } from 'src/types'
+import { getCollection, render } from 'astro:content'
+import { Picture } from 'astro:assets'
+import Main from '@layouts/Main.astro'
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('blog')
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }))
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props
+const { Content } = await render(post)
+const { title: blogTitle, description, lang, date, author, cover } = post.data
+const title = `${blogTitle} • Blog`
+
+const text = {
+  publishedOn: {
+    de: 'Veröffentlicht am',
+    en: 'Published on',
+    fr: 'Publié le',
+    it: 'Pubblicato il',
+  },
+  by: {
+    de: 'von',
+    en: 'by',
+    fr: 'par',
+    it: 'da',
+  },
+} satisfies Record<string, Record<Language, string>>
+---
+
+<Main title={title} description={description} cover={cover}>
+  {
+    cover && (
+      <Picture
+        src={cover}
+        alt=""
+        sizes="100vw"
+        widths={[350, 720, 1440]}
+        class="hero"
+        loading="eager"
+      />
+    )
+  }
+  <Container size="small">
+    <article class="blog-post">
+      <h1>{blogTitle}</h1>
+      <p class="description">
+        {description}
+      </p>
+      <p class="publish-date">
+        {text.publishedOn[lang]}
+        <b>{new Date(date).toLocaleDateString(lang)}</b>
+        {text.by[lang]}
+        <b>{author}</b>
+      </p>
+      <Content />
+    </article>
+  </Container>
+</Main>
+
+<style lang="scss" is:global>
+  picture:has(.hero) {
+    display: block;
+    text-align: center;
+    background-color: var(--light-background-color);
+    img {
+      display: block;
+      margin-inline: auto;
+      max-height: 60vh;
+      min-height: 30vh;
+      object-fit: cover;
+    }
+  }
+
+  .blog-post {
+    li {
+      margin-bottom: 0.8em;
+
+      &::marker {
+        font-size: 1em !important;
+      }
+    }
+  }
+</style>
+<style lang="scss">
+  h1 {
+    margin-bottom: 0;
+    line-height: 1em;
+  }
+
+  .publish-date {
+    font-size: 0.8em;
+    margin-bottom: 3em;
+  }
+
+  .description {
+    font-weight: 600;
+  }
+</style>
