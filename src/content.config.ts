@@ -11,7 +11,6 @@ const blogCollection = defineCollection({
     author: z.string(),
     cover: image().optional(),
     coverAlt: z.string().optional(),
-    layout: z.enum(["@layouts/Blog.astro"]),
   }),
 });
 

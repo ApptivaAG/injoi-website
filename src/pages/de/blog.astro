@@ -15,9 +15,10 @@ const description =
     {
       allBlogPosts.map((post) => (
         <article>
-          <a href={post.id}>
+          <a href={`/${post.id}/`}>
             <h2>{post.data.title}</h2>
           </a>
+          <p>{post.id}</p>
           <p>{post.data.description}</p>
           <p class="meta">
             {new Date(post.data.date).toLocaleDateString('de')} -{' '}
