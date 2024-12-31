@@ -3,7 +3,10 @@ import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import { getCollection } from 'astro:content'
 
-const allBlogPosts = await getCollection('blog')
+const allBlogPosts = await getCollection(
+  'blog',
+  ({ data }) => data.lang === 'de'
+)
 
 const description =
   'Der neuste Klatsch und Tratsch, den injoi aufgeschnappt hat.'
@@ -13,19 +16,20 @@ const description =
   <Container size="small">
     <h1>Blog: Neuigkeiten zu injoi</h1>
     {
-      allBlogPosts.map((post) => (
-        <article>
-          <a href={`/${post.id}/`}>
-            <h2>{post.data.title}</h2>
-          </a>
-          <p>{post.id}</p>
-          <p>{post.data.description}</p>
-          <p class="meta">
-            {new Date(post.data.date).toLocaleDateString('de')} -{' '}
-            {post.data.author}
-          </p>
-        </article>
-      ))
+      allBlogPosts
+        .toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .map((post) => (
+          <article>
+            <a href={`/${post.id}/`}>
+              <h2>{post.data.title}</h2>
+            </a>
+            <p>{post.data.description}</p>
+            <p class="meta">
+              {new Date(post.data.date).toLocaleDateString('de')} -{' '}
+              {post.data.author}
+            </p>
+          </article>
+        ))
     }
   </Container>
 </Main>
