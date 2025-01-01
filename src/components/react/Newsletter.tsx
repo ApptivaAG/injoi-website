@@ -38,17 +38,18 @@ const Newsletter = () => {
   return (
     <div>
       {(state === 'Open' || state === 'Loading') && (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='space-y-2'>
           <h2>Newsletter</h2>
           <p>
             Möchten Sie über die neuesten Updates and Highlights von injoi
             informiert werden? Dann abonnieren Sie unseren Newsletter!
           </p>
-          <div>
+          <div className='flex flex-col items-start gap-1'>
             <label htmlFor="mce-EMAIL">
               Email Adresse <small>zwingend</small>
             </label>
             <input
+              className="px-4 py-3 rounded bg-gray-700 max-w-96 w-full"
               type="email"
               value={email}
               name="EMAIL"
@@ -60,6 +61,7 @@ const Newsletter = () => {
           {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
           <div>
             <input
+              className='hidden'
               type="text"
               name="b_e2cf4f383660f53ff71e7e859_3a36c97d59"
               tabIndex={-1}
@@ -67,7 +69,7 @@ const Newsletter = () => {
               onChange={(e) => setHoneyPot(e.target.value)}
             />
           </div>
-          <div>
+          <div className='pt-4'>
             <button
               type="submit"
               name="subscribe"

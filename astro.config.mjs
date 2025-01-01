@@ -11,6 +11,8 @@ import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react';
 
+import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
@@ -22,6 +24,6 @@ export default defineConfig(
       filter: (page) =>
         page !== 'https://injoiapp.com/de/avv/' &&
         page !== 'https://injoiapp.com/tracking/',
-    }), mdx(), react()],
+    }), mdx(), react(), tailwind()],
   }
 )
