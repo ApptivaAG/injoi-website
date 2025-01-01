@@ -1,3 +1,4 @@
+import type { CollectionEntry } from 'astro:content'
 import type { BlogPost, Language } from './types'
 
 export const mkIsCurrentPage =
@@ -13,17 +14,11 @@ export const getCurrentLanguage = (currentPathname: string): Language => {
   return currentPathname.substring(1, 3) as Language
 }
 
-export const takeSortedBlogPosts = (
-  blogPosts: BlogPost[],
-  language: Language,
-  take?: number
-) =>
-  [...blogPosts]
-    .sort(
-      (a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date)
-    )
-    .filter((post) => post.frontmatter.lang === language)
-    .slice(0, take)
+export function sortBlogPostsByDate(allBlogPosts: CollectionEntry<'blog'>[]) {
+  return allBlogPosts.toSorted(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  )
+}
 
 export const addSlashToEndIfMissing = (url: string) =>
   url.endsWith('/') ? url : `${url}/`

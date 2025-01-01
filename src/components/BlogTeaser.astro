@@ -1,16 +1,12 @@
 ---
 import { getCollection } from 'astro:content'
 import type { Language } from 'src/types'
-import { takeSortedBlogPosts } from 'src/utils'
 
 export interface Props {
   language: Language
 }
 
-const { language } = Astro.props as Props
-
 const sortedBlogs = await getCollection('blog')
-// const sortedBlogs = takeSortedBlogPosts(blogs, language, 5)
 ---
 
 <ul class="teaser">

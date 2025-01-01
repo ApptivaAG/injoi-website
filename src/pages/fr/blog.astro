@@ -2,6 +2,7 @@
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import { getCollection } from 'astro:content'
+import { sortBlogPostsByDate } from 'src/utils'
 
 const allBlogPosts = await getCollection(
   'blog',
@@ -16,16 +17,14 @@ const allBlogPosts = await getCollection(
   <Container size="small">
     <h1>Nouvelles de injoi</h1>
     {
-      allBlogPosts
-        .toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
-        .map((post) => (
-          <article>
-            <a href={`/${post.id}/`}>
-              <h2>{post.data.title}</h2>
-            </a>
-            <p>{post.data.description}</p>
-          </article>
-        ))
+      sortBlogPostsByDate(allBlogPosts).map((post) => (
+        <article>
+          <a href={`/${post.id}/`}>
+            <h2>{post.data.title}</h2>
+          </a>
+          <p>{post.data.description}</p>
+        </article>
+      ))
     }
   </Container>
 </Main>
