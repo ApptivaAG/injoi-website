@@ -45,12 +45,11 @@ const openGraph = {
 
 const production = import.meta.env.CONTEXT === 'production'
 ---
-
-<html lang={lang}>
+<html lang={lang} class="font-sans">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/assets/fonts/font.css" />
+    <link rel="stylesheet" href="/assets/font/font.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -131,6 +130,22 @@ const production = import.meta.env.CONTEXT === 'production'
       body {
         max-width: 100%;
         overflow-x: hidden;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          'Header'
+          'Announcement'
+          'Content'
+          'Footer';
+        min-height: 100vh;
+        background: var(--background-color);
+        color: var(--text-color);
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
       }
       main {
         grid-area: Content;

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Gentona;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/assets/font/Gentona-Book.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Gentona;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("/assets/font/Gentona-SemiBold.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: Gentona;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url("/assets/font/Gentona-ExtraBold.woff2") format("woff2")
+}
