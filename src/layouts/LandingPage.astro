@@ -2,7 +2,6 @@
 import Main from './Main.astro'
 import Container from '@components/Container.astro'
 import type { LandingPageFrontMatter } from 'src/types'
-import Header from '@components/Header.astro'
 
 export type Props = {
   content: LandingPageFrontMatter
@@ -49,3 +48,4 @@ const { title, description } = content
     font-weight: 600;
   }
 </style>
+

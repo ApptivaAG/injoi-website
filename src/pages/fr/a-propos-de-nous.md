@@ -1,7 +1,7 @@
 ---
 lang: fr
 title: À propos de nous
-layout: '@layouts/Blog.astro'
+layout: '@layouts/LandingPage.astro'
 ---
 
 ## Histoire
