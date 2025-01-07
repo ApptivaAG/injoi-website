@@ -10,6 +10,9 @@
     "netlify": "netlify dev",
     "test": "vitest"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "devDependencies": {
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/partytown": "^2.1.2",
