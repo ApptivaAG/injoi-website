@@ -1,0 +1,49 @@
+---
+lang: en
+title: 'Update 22/Q1: Ordering clearer for Guests and Restaurant Staff'
+description: In the last few months, we delivered important functionality to make guest orders clearer for operators. In addition, it is now possible to inform the guests at Take Away via SMS when the order is ready.
+date: 2022-02-22
+author: Philip Schönholzer
+
+---
+
+import Figure from '@components/Figure.astro'
+
+With the current version of injoi, it is possible to transmit the order for the restaurant in a clearer and more structured way. We worked closely with the restaurants to make injoi not only easy for the guests, but also easier for the restaurant staff. The initial feedback has been very positive.
+
+## Opening hours in injoi
+
+For a long time we planned to be able to store opening hours in injoi and to allow ordering accordingly. This is now finally possible. For this purpose, the restaurant defines the opening hours for each day of the week. If the guests order outside the opening hours, they are informed that the restaurant does not accept orders at the moment. In addition, it is now possible in injoi to press the "emergency stop" if the kitchen is overloaded. In this case, the guests are informed that they should contact the staff for orders.
+
+## Assign order items to an course
+
+If the restaurant wants, guests can order multiple "courses" at once. In this case, guests assign each order item to a course so that the staff understands when which dish is desired.
+
+<Figure
+  src={import('./courses.png')}
+  caption="Guests can assign items to a course in the ordering app."
+/>
+
+## Combine orders
+
+If the restaurant wants, we combine orders of one table. This means that if several guests at the same table order at the same time via injoi, we send a combined order to the restaurant, with the positions of all guests at the table. This way the staff understands better which orders have to be prepared together.
+
+## Order without having to pay right away
+
+Until now, guests always had to pay right away if they wanted to order something through injoi. Now the restaurant can allow guests to order without payment and pay instead at the end of the visit.
+
+In the near future, we also plan to allow payment in the end of the visit via the app.
+
+## SMS notification for Take Away
+
+For Take Away, we now inform guests via SMS when their food is ready for pickup. This is currently only possible via a cash register.
+
+## Feedback on the update
+
+Some restaurants have already been using the above functionality for a few weeks. We have received very good feedback from them so far.
+
+However, there is also one sticking point. Of all the features, the "courses" feature is the most challenging. The current variant works well for most guests, but it still happens from time to time that guests do not "correctly" assign the positions to the courses and do not receive the food at the desired time. We are constantly improving this and have already made certain changes. We will certainly keep an eye on this one.
+
+## Outlook
+
+For the next few months we have planned some interesting features. What we already have implemented and what is planned can be seen in our [Roadmap](https://payflink.notion.site/Roadmap-von-Payflink-6644875d1fba4fe58cacfbf15e1ace7e).

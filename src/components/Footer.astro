@@ -4,8 +4,8 @@ import { getCurrentLanguage, mkIsCurrentPage } from '../utils.js'
 import CallToAction from './CallToAction.astro'
 import Container from './Container.astro'
 import Sitemap from './Sitemap.astro'
-import Dialog from '@components/Dialog'
-import Newsletter from '@components/Newsletter'
+import Dialog from '@components/react/Dialog'
+import Newsletter from '@components/react/Newsletter'
 import Button from './Button.astro'
 
 const isCurrentPage = mkIsCurrentPage(Astro.url.pathname)
@@ -50,10 +50,10 @@ const links = callToActionLinks[lang]
       </p>
     </div>
     <div>
-      <Dialog client:load>
+      <Dialog client:only>
         <Button slot="openElement">{footerInfo.newsletter}</Button>
         <div class="newsletter-wrapper">
-          <Newsletter client:visible />
+          <Newsletter client:only />
         </div>
       </Dialog>
       <p>

@@ -2,11 +2,11 @@
 import MainLayout from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import ButtonLink from '@components/ButtonLink.astro'
-import FixedPicture from '@components/FixedPicture.astro'
-import { callToActionLinks, metaData,  } from 'src/config'
+import { callToActionLinks, metaData } from 'src/config'
 import BlogTeaser from '@components/BlogTeaser.astro'
 import Hero from '@components/Hero.astro'
 import Customers from '@components/Customers.astro'
+import { Picture } from 'astro:assets'
 
 const { en } = metaData
 
@@ -18,7 +18,7 @@ const description =
   <Container>
     <Hero
       name={en.name}
-      image={}
+      image=""
       claim={en.claim}
       from="Developed in Lucerne"
       animation={{
@@ -45,7 +45,7 @@ const description =
       <ul class="image-list" style="justify-content: flex-start;">
         <li>
           <a href="https://www.flm.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/flm.png')}
               alt="FLM Kassensysteme"
               height={120}
@@ -55,7 +55,7 @@ const description =
         </li>
         <li>
           <a href="https://www.pacha.ch/">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/pacha.png')}
               alt="Pacha Kassensysteme"
               height={120}
@@ -65,7 +65,7 @@ const description =
         </li>
         <li>
           <a href="https://www.bkpos.ch/hiopos-kassensystem">
-            <FixedPicture
+            <Picture
               src={import('../../images/partners/hiopos.png')}
               alt="HIOPOS Kassensysteme"
               height={40}
@@ -74,7 +74,7 @@ const description =
           </a>
         </li>
         <li>
-          <FixedPicture
+          <Picture
             src={import('../../images/partners/digital-enterprise.png')}
             alt="Digital Enterprise"
             height={40}

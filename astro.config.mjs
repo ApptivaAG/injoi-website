@@ -7,11 +7,11 @@
 // @ts-check
 // https://astro.build/config
 import { defineConfig } from 'astro/config'
-import solid from '@astrojs/solid-js'
 import sitemap from '@astrojs/sitemap'
-import image from '@astrojs/image'
 import mdx from '@astrojs/mdx'
-import preact from '@astrojs/preact'
+import react from '@astrojs/react';
+
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig(
@@ -20,18 +20,10 @@ export default defineConfig(
     // Enable the Solid renderer to support Solid JSX components.
     site: 'https://injoiapp.com',
     trailingSlash: 'always',
-    integrations: [
-      solid(),
-      sitemap({
-        filter: (page) =>
-          page !== 'https://injoiapp.com/de/avv/' &&
-          page !== 'https://injoiapp.com/tracking/',
-      }),
-      image({
-        serviceEntryPoint: '@astrojs/image/sharp',
-      }),
-      mdx(),
-      preact(),
-    ],
+    integrations: [sitemap({
+      filter: (page) =>
+        page !== 'https://injoiapp.com/de/avv/' &&
+        page !== 'https://injoiapp.com/tracking/',
+    }), mdx(), react(), tailwind()],
   }
 )

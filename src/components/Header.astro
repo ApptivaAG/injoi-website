@@ -1,7 +1,7 @@
 ---
 import { globalNavigation, metaData } from 'src/config'
 import { getCurrentLanguage, mkIsCurrentPage } from '../utils'
-import Dialog from '@components/Dialog'
+import Dialog from '@components/react/Dialog'
 import FlyoutMenu from './FlyoutMenu.astro'
 import MobileMenu from './MobileMenu.astro'
 
@@ -49,7 +49,7 @@ const data = metaData[lang]
       }
     </nav>
   </div>
-  <Dialog client:load>
+  <Dialog client:only>
     <button slot="openElement">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>Menu</title>

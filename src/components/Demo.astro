@@ -1,5 +1,5 @@
 ---
-import Dialog from '@components/Dialog'
+import Dialog from '@components/react/Dialog'
 import Button from './Button.astro'
 ---
 
@@ -18,7 +18,7 @@ import Button from './Button.astro'
       </p>
     </slot>
 
-    <Dialog client:visible>
+    <Dialog client:only>
       <Button slot="openElement">
         <p class="test-now">
           <slot name="try">Hier ausprobieren!</slot>
@@ -83,7 +83,7 @@ import Button from './Button.astro'
         src="https://demo.payflink.app/"
         frameborder="0"></iframe>
       <div class="overlay">
-        <Dialog client:visible>
+        <Dialog client:only>
           <button
             aria-label="Demo Starten"
             style="position: absolute; height: 100%; width: 100%; border: none; background: transparent; cursor: pointer; text-decoration: none;"
@@ -132,7 +132,6 @@ import Button from './Button.astro'
       </div>
     </div>
     <img
-      style="position: sticky;"
       class="desktop qr-code"
       src="/assets/qr-code.svg"
       alt="QR Code zur Demo"

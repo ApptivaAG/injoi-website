@@ -1,5 +1,5 @@
 ---
-import FixedPicture from './FixedPicture.astro'
+import { Picture } from 'astro:assets'
 
 export type Customer = {
   image: string
@@ -7,7 +7,6 @@ export type Customer = {
 }
 
 const customers: Customer[] = [
-  
   {
     image: 'habsburg-bar',
     alt: 'Habsburg-Bar',
@@ -85,10 +84,9 @@ const customers: Customer[] = [
       {
         customers.map((customer) => (
           <li>
-            <FixedPicture
+            <Picture
               src={import(`../images/customers/${customer.image}.png`)}
               alt={customer.alt}
-              placeholder={'tracedSVG'}
               height={50}
               loading="eager"
             />
@@ -100,10 +98,9 @@ const customers: Customer[] = [
       {
         customers.map((customer) => (
           <li>
-            <FixedPicture
+            <Picture
               src={import(`../images/customers/${customer.image}.png`)}
               alt={customer.alt}
-              placeholder={'tracedSVG'}
               height={50}
               loading="eager"
             />

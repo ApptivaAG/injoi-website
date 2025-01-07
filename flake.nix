@@ -5,8 +5,8 @@
   outputs = {nixpkgs, flake-utils, ...}: flake-utils.lib.eachDefaultSystem (system: with import nixpkgs {inherit system;}; {
     devShells.default = mkShell {
       buildInputs = [
-        nodejs-18_x
-        nodePackages.pnpm
+        nodejs_22
+        pnpm
       ];
     };
   });
