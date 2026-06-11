@@ -80,14 +80,6 @@ const production = import.meta.env.CONTEXT === 'production'
 
   <body>
     <Header />
-    <Announcement>
-      {lang === 'de' ? 
-      (<p>Payflink heisst jetzt <b>injoi!</b></p>) 
-      : lang === 'fr' ?
-      (<p>Payflink s'appelle maitenant <b>injoi!</b></p>)
-      :
-      <p>Payflink is now <b>injoi!</b></p>}
-    </Announcement>
     <main>
       <slot />
       {
