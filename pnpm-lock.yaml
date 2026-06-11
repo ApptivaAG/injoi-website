@@ -33,6 +33,9 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0
     devDependencies:
+      '@astrojs/markdown-remark':
+        specifier: ^7.2.0
+        version: 7.2.0
       '@astrojs/mdx':
         specifier: ^6.0.3
         version: 6.0.3(astro@6.4.6(@netlify/blobs@10.7.9(supports-color@10.2.2))(@types/node@25.9.2)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.61.1)(sass@1.100.0)(yaml@2.9.0))

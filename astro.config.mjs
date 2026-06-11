@@ -11,6 +11,8 @@ import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
+import { unified } from '@astrojs/markdown-remark'
+import rehypeTranslateFootnotes from './src/rehype-translate-footnotes.js'
 
 // https://astro.build/config
 export default defineConfig(
@@ -18,6 +20,11 @@ export default defineConfig(
   {
     site: 'https://injoiapp.com',
     trailingSlash: 'always',
+    markdown: {
+      processor: unified({
+        rehypePlugins: [rehypeTranslateFootnotes],
+      }),
+    },
     integrations: [sitemap({
       filter: (page) =>
         page !== 'https://injoiapp.com/de/avv/' &&
