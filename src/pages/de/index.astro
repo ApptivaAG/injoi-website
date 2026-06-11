@@ -521,10 +521,6 @@ const description =
       list-style: none;
       margin-inline: 0;
 
-      ::global(img) {
-        width: 100%;
-      }
-
       p {
         margin-top: 0.2em;
         text-align: center;
@@ -551,10 +547,8 @@ const description =
       content: ' ';
       position: absolute;
       inset: -1em 0;
-      background-image: linear-gradient(
-          rgba(255, 255, 255, 0),
-          rgba(255, 255, 255, 0)
-        ),
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
         url(/assets/curve.svg);
       background-position: center;
       background-repeat: no-repeat;

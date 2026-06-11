@@ -10,20 +10,21 @@ import { defineConfig } from 'astro/config'
 import sitemap from '@astrojs/sitemap'
 import mdx from '@astrojs/mdx'
 import react from '@astrojs/react';
-
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig(
   /** @type {import('astro').AstroUserConfig} */
   {
-    // Enable the Solid renderer to support Solid JSX components.
     site: 'https://injoiapp.com',
     trailingSlash: 'always',
     integrations: [sitemap({
       filter: (page) =>
         page !== 'https://injoiapp.com/de/avv/' &&
         page !== 'https://injoiapp.com/tracking/',
-    }), mdx(), react(), tailwind()],
+    }), mdx(), react()],
+    vite: {
+      plugins: [tailwindcss()],
+    },
   }
 )

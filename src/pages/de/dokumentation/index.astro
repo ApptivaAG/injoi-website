@@ -2,8 +2,14 @@
 import Main from '@layouts/Main.astro'
 import Container from '@components/Container.astro'
 import type { DocumentationFrontMatter } from 'src/types'
+import type { MDXInstance } from 'astro'
 
-const docs = await Astro.glob<DocumentationFrontMatter>('./**/*.mdx')
+const docModules = import.meta.glob<MDXInstance<DocumentationFrontMatter>>(
+  './**/*.mdx',
+  { eager: true }
+)
+
+const docs = Object.values(docModules)
 
 const description =
   'Dokumentation von injoi, der Bestell- und Zahlungsspeisekarte.'
